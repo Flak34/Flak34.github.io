@@ -1,0 +1,65 @@
+.partner_banks {
+    margin-top: 100px;
+
+}
+
+.partner_banks_text {
+    text-align: center;
+}
+
+.partner_banks_text h1 {
+    font-size: 60px;
+    font-weight: 750;
+}
+
+.partner_banks_text h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgb(134, 134, 134);
+    font-weight: 150
+}
+
+.bank_icons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.bank_icon {
+
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    border-radius: 10px;
+}
+
+.bank_icon img {
+    display: block;
+    max-height: min-content;
+
+}
+
+@media (max-width:1200px) {
+    .bank_icon {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .bank_icon {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .bank_icons_container {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,94 @@
+.showcase {
+    margin-top: 100px;
+}
+
+.showcase_body {
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_card {
+    width: 30%;
+    height: fit-content;
+}
+
+.car_image {
+    padding: 0px 0px 88% 0px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.car_image:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.car_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.car_name {
+    margin-top: 20px;
+    font-weight: 750;
+    font-size: 20px;
+
+}
+
+.car_info {
+    margin-top: 10px;
+    color: rgb(159, 159, 159);
+    font-size: 13px;
+    font-weight: 300;
+
+}
+
+.price {
+    font-size: 25px;
+    color: rgb(232, 49, 8);
+    margin-top: 15px;
+
+}
+
+.buy_button {
+    height: 40px;
+    background-color: rgb(232, 49, 8);
+    margin-top: 15px;
+    color: white;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.buy_button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    .car_card {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .car_card {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .buy_button {
+        width: 100%;
+    }
+    .showcase_body {
+        justify-content: center;
+    }
+}
